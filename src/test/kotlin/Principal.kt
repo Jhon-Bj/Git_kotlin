@@ -4,6 +4,8 @@ fun main() {
 
     println("segunda linea por consola :)")
 
+    println("aprendiendo kotlin")
+
 
 
 
