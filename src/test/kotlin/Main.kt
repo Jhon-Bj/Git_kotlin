@@ -1,9 +1,5 @@
-import java.text.DecimalFormat
-import kotlin.math.ceil
-import kotlin.math.floor
-
 fun main(){
-/*
+
     println("hola kotlin")
 
     // TIPOS DE VARIABLES
@@ -52,76 +48,9 @@ fun main(){
         EL AREA DEL TRIANGULO ES: $AI
     """.trimIndent())
 
-    var raiz = Math.sqrt(AI.toDouble())
+    var raiz = Math.sqrt(at.toDouble())
     println("LA RAIZ ES: $raiz ")
-    //redondeo de numeros
-    println(DecimalFormat("#,###").format(raiz))
-
-    //REDONDEAR NUMERO HACIA ABAJO
-    println(floor(raiz).toInt())
-    println(ceil(raiz).toInt())
 
 
-
-
-
-    //ESTRUCTURAS
-    //CONDICIONALES IF - ELSE
-
-    var edad:Int
-    println("Ingrese su edad")
-    edad = readln().toInt()
-    if (edad>=18){
-        println("ES MAYOR DE EDAD")
-    }else{
-        println("ES MENOR DE EDAD")
-    }
-
-    //WHEN
-    var numero = 3
-
-    when (numero){
-        1-> println("NO ES IGUAL")
-
-        2->{
-            println("NO ES IGUAL")
-        }
-        3->{
-            println("Si es igual")
-        }
-
-        else ->println("NUMERO NO ENCONTRADO")
-
-
-    }
-
-    //CICLOS
-    //CICLO FOR
-    for (i in 1 .. 100){
-        println(i)
-    }
-    for (j in 100 downTo 1 step 2){
-        println(j)
-    }
-
-    var z =1
-    while (z<=100){
-
-        println(z)
-        z++
-
-    }
-    println(z)
-
- */
-    var f = 100
-
-    do{
-
-        println(f)
-        f--
-
-
-    }while (f>=1)
 
 }
