@@ -2,7 +2,7 @@ import java.lang.ref.PhantomReference
 import java.text.DecimalFormat
 import kotlin.math.ceil
 import kotlin.math.floor
-
+/*
 fun main() {
     /*
     println("hola kotlin")
@@ -176,7 +176,7 @@ fun main() {
     for (i in 0 .. numeros.size-1){
         println(numeros[i])
     }
-    */
+
     //USO DE ARRAYLIST
     //arrayListOf<String> La lista va a ser de tipo string
     //Sino lo especifico el tipo de dato lo que sucede es que la lista recibe recibe cualquier tipo de dato
@@ -190,7 +190,7 @@ fun main() {
     println(nombre)
 
     //println(num1 + num2)
-    */
+
 
 
 
@@ -208,3 +208,5 @@ fun main() {
 
 
 }
+
+ */
