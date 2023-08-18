@@ -1,3 +1,6 @@
+import java.text.DecimalFormat
+
+
 fun main() {
 
 
@@ -35,21 +38,49 @@ fun main() {
 
     var imp_año = imp_mes * 12
 
-
-
-    println("el impuesto pago en el mes sera de: $imp_mes")
-    println("El impuesto pagado al año sera de: $imp_año")
-    println("el salario mensual menos el impuesto sera de: $salario")
-    println("el salario anual menos el impuesto sera de: $salario_a")
+    println("""
+    Salario neto al mes: ${DecimalFormat("#.##").format(salario)} 
+    Salario neto al año: ${DecimalFormat("#.##").format(salario_a)}
+    Impuestos al mes:  ${DecimalFormat("#.##").format(imp_mes)}
+    Impuestos al año:  ${DecimalFormat("#.##").format(imp_año)}  
+        
+    """.trimIndent())
 
 
 //Area de un circulo
-    println("ÁREA DE UN CIRCULO")
+    println(" DIGITA EL ÁREA DE UN CIRCULO")
+
     var radio = readln().toDouble()
 
 
+    fun area (): Double {
+        return Math.PI * Math.pow(radio, 2.0)
+
+    }
+    fun circunferencia () : Double {
+        return  2 * Math.PI * radio
+
+    }
+    var area_p = area() / 2.54
+    var circunferencia_p = circunferencia() /2.54
+    println("""
+    Área en cm : "${DecimalFormat("#.##").format(area())}
+    La circunfeencia es : ${DecimalFormat("#.##").format(circunferencia())}
+    Área en pulgadas : ${DecimalFormat("#.##").format(circunferencia_p)} 
+    Circunfrencia en pulgadas : ${DecimalFormat("#.##").format(circunferencia_p)}
+        
+    """.trimIndent())
+
+// Transporte
 
 
 
 
-}
+    }
+
+
+
+
+
+
+
